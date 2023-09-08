@@ -16,15 +16,24 @@
     ],
     "ios": {
       "infoPlist": {
-        "NSCameraUsageDescription": "This app uses the camera to take pictures."
+        "NSCameraUsageDescription": "This app uses the camera to take pictures.",
+        "NSPhotoLibraryUsageDescription": "Allow picture collection to access your photos.",
+        "NSPhotoLibraryAddUsageDescription": "Allow picture collection to save photos."
       },
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.maoapp.picturesCollection"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_MEDIA_LOCATION"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -44,6 +53,11 @@
           "isAccessMediaLocationEnabled": true
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "af8e1dac-34f8-47a9-9d3d-e7df3b43cb1a"
+      }
+    }
   }
 }

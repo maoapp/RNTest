@@ -3,7 +3,7 @@ import { View, Image, StyleSheet } from 'react-native';
 import styles from './styles';
 
 // @assets
-const logo = require('../../assets/logo2.png');
+const logo = require('../../../assets/logo2.png');
 
 const TopBar = () => (
   <View style={styles.container}>

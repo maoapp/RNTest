@@ -5,7 +5,7 @@ import { View, TouchableOpacity, Image } from 'react-native';
 import styles from './styles';
 
 // @assets
-const cameraIcon = require('../../assets/camera.png');
+const cameraIcon = require('../../../assets/camera.png');
 
 interface IBottomBarProps {
   onPressCamera: () => void,
