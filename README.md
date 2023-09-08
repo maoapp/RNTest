@@ -28,9 +28,12 @@ Local Mode
 
 ## Usage
 
-Start the Expo development server:
+- Start the Expo development server:
    ```bash
-   yarn start // start server
-   yarn android // run on android emulator
-   yarn ios // run on ios simulator
-   
+   yarn start
+- Run on android emulator
+   ```bash
+   yarn android
+- Run on ios simulator
+   ```bash
+   yarn ios
