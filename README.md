@@ -12,8 +12,10 @@ Requirements:
 
 ## Installation and Download on your device
 
-To download the IPA and APK, visit this link [ Download Pictures Collection App]([https://github.com](https://expo.dev/accounts/maoapp/projects/picturesCollection/builds))
-To install with QR you should download the Expo Go app and scan the next QR code:
+- To download the IPA(artifcat) and APK , visit this [link]( https://expo.dev/accounts/maoapp/projects/picturesCollection/builds)
+- To install with QR you should download the Expo Go app and scan the next QR code:
+
+
 
 ## Local Installation
 
