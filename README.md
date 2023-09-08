@@ -9,6 +9,8 @@ Requirements:
 
 ## Installation
 
+Local Mode
+
 1. Clone the repository.
 2. Install dependencies using npm or yarn:
 3. 
@@ -20,7 +22,9 @@ Requirements:
 ## Usage
 
 Start the Expo development server:
+   ```bash
+   yarn start
 
-yarn start
+
 
 
