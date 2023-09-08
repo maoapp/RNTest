@@ -12,8 +12,10 @@ Requirements:
 Local Mode
 
 1. Clone the repository.
-2. Install dependencies using npm or yarn:
-3. 
+   ```bash
+   git clone https://github.com/yourusername/your-repo.git
+2. Open the repository
+3. Install dependencies using npm or yarn:
    ```bash
    npm install
    # or
@@ -24,6 +26,7 @@ Local Mode
 Start the Expo development server:
    ```bash
    yarn start
+
 
 
 
