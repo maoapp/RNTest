@@ -6,6 +6,7 @@ import {
   FlatList,
   Dimensions,
   Linking,
+  Alert,
 } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import { Camera, PermissionResponse } from 'expo-camera';
@@ -33,12 +34,16 @@ const Home = () => {
   );
 
   const checkPermissions = async () => {
-    const cameraPermission = await Camera.requestCameraPermissionsAsync();
-    const mediaLibraryPermission = await MediaLibrary.requestPermissionsAsync();
+    try {
+      const cameraPermission = await Camera.requestCameraPermissionsAsync();
+      const mediaLibraryPermission = await MediaLibrary.requestPermissionsAsync();
+  
+      setCameraPermissions(cameraPermission);
+      setMediaPermissions(mediaLibraryPermission);
+    } catch {
+      Alert.alert('Error loading the device permissions, reload the app please');
+    }
 
-    console.log('entra a pedir permiso')
-    setCameraPermissions(cameraPermission);
-    setMediaPermissions(mediaLibraryPermission);
   };
 
   useEffect(() => {
@@ -59,7 +64,7 @@ const Home = () => {
 
       setLocalImages(getAllPhotos.assets);
     } catch (error) {
-      console.error(error);
+      Alert.alert('Error getting the local images, verify the access to photos permissions and reload the app please');
     }
   };
 
@@ -103,14 +108,14 @@ const Home = () => {
 
   const renderEmptyState = () => (
     <Text style={styles.emptyText}>
-      Tu colección de fotos está vacía, cuál será tu primera foto ?
+      Your photo collection is empty, what will be your first photo?
     </Text>
   );
 
   return (
     <View style={styles.container}>
       <TopBar />
-      <AlertModal visible={!appHasPermissions} onActionPress={checkPermissions} />
+      <AlertModal visible={!appHasPermissions} onActionPress={() => Linking.openSettings()}/>
       <FlatList
         data={localImages}
         keyExtractor={(item, index) => `${item.filename} ${index}`}

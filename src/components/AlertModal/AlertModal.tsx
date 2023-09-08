@@ -26,15 +26,15 @@ const AlertModal: React.FC<IAlertModalProps> = ({
       <View style={styles.modalContainer}>
         <View style={styles.modalContent}>  
           <Image source={alertIcon} style={styles.image} />
-          <Text style={styles.title}>Debes activar los permisos para usar Collection Pictures</Text>
+          <Text style={styles.title}>You must enable permissions to use Collection Pictures</Text>
           <Text style={styles.description}>
-            Con el fin de poder interactuar con la app guardando y tomando tus fotos debes activar los permisos
+            In order to interact with the app by saving and taking photos, you must enable the permissions and reload the app.
           </Text>
           <TouchableOpacity
             style={styles.button}
             onPress={onActionPress}
           >
-            <Text style={styles.buttonText}>Activar</Text>
+            <Text style={styles.buttonText}>Activate</Text>
           </TouchableOpacity>
         </View>
       </View>
