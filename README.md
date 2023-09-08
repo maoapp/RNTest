@@ -7,7 +7,12 @@ Requirements:
 - Display a List of Local Images
 - Provide the Option to Reject or Accept Pictures and Add Accepted Ones to the Images List
 
-## Installation
+## Installation and Download on your device
+
+To download the IPA and APK, visit this link [ Download Pictures Collection App]([https://github.com](https://expo.dev/accounts/maoapp/projects/picturesCollection/builds))
+To install with QR you should download the Expo Go app and scan the next QR code:
+
+## Local Installation
 
 Local Mode
 
@@ -25,9 +30,7 @@ Local Mode
 
 Start the Expo development server:
    ```bash
-   yarn start
-
-
-
-
-
+   yarn start // start server
+   yarn android // run on android emulator
+   yarn ios // run on ios simulator
+   
