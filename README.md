@@ -7,6 +7,9 @@ Requirements:
 - Display a List of Local Images
 - Provide the Option to Reject or Accept Pictures and Add Accepted Ones to the Images List
 
+## Preview
+![](preview.gif)
+
 ## Installation and Download on your device
 
 To download the IPA and APK, visit this link [ Download Pictures Collection App]([https://github.com](https://expo.dev/accounts/maoapp/projects/picturesCollection/builds))
