@@ -14,9 +14,9 @@ Requirements:
 
 - To download the IPA(artifcat) and APK , visit this [link]( https://expo.dev/accounts/maoapp/projects/picturesCollection/builds)
 - To install with QR you should download the Expo Go app and scan the next QR code:
-
-
-
+  Android
+<img width="382" alt="image" src="https://github.com/maoapp/RNTest/assets/19539930/ffa108c4-bc6d-4e7b-9602-a2b4538b7b5c">
+  
 ## Local Installation
 
 Local Mode
